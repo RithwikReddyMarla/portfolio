@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar section -->
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="menu-toggle">&#9776;</div> 
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#internship">Internship</a>
+                <a href="#certificates">Certifications</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <script>
+            document.querySelector(".menu-toggle").addEventListener("click", function () {
+                document.querySelector(".navbar").classList.toggle("active");
+                document.body.classList.toggle("no-scroll");
+            });
+        
+            document.querySelectorAll(".navbar a").forEach(link => {
+                link.addEventListener("click", function () {
+                    document.querySelector(".navbar").classList.remove("active");
+                    document.body.classList.remove("no-scroll");
+                });
+            });
+            
+        </script>
+
+        <!-- home section -->
+        <section id="home">
+            <div class="home-detail">
+                <p>Hello i'm</p>
+                <h1>Marla Rithwik Reddy</h1>
+                <h2>Frontend Developer</h2>
+                <div class="download-social">
+                    <a href="cv.pdf" class="btn" download="My_CV.pdf">Download CV</a>
+                    <div class="social-icons">
+                        <a href="https://github.com/RithwikReddyMarla" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/rithwik-reddy-marla/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="images/profilepic.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+            <div class="about-detail">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p>
+                        I am currently pursuing a B.Tech in Computer Science and Engineering with a specialization in
+                         Artificial Intelligence and Machine Learning at NGIT, Hyderabad, maintaining a CGPA of 9.135.
+                         My strong academic background reflects my dedication to learning, problem-solving, and my deep passion for technology.
+                    </p>
+                    <p>
+                        I have successfully completed an internship at MotionCut as a Frontend Developer, 
+                        where I gained hands-on experience in building responsive and user-friendly web applications.
+                         This opportunity allowed me to strengthen my technical skills in HTML, CSS, JavaScript, React.js while working on real-world projects.
+                    </p>
+                    <p>
+                        Beyond academics and internships, I have earned multiple certifications that validate my expertise in 
+                        web development, programming, and emerging technologies.I firmly believe in continuous learning and am
+                         currently deepening my knowledge of React.js, focusing on building scalable and high-performance web applications.
+                    </p>
+                    <p>
+                        Apart from coding, I enjoy engaging in creative problem-solving, exploring the latest tech trends.
+                        .My goal is to become a proficient Web Developer,constantly enhancing my skill set and contributing 
+                        to projects that deliver seamless and impactful digital experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- education section -->
+        <section id="education">
+            <div class="education-details">
+                <div class="heading-edu">
+                    <h2>Education</h2>
+                </div>
+                <div class="btech">
+                    <h3>B.Tech in Computer Science And Engineering (Specialization in AI/ML)</h3>
+                    <p><b>Institution:</b> NGIT, Hyderabad</p>
+                    <p><b>Duration:</b> 2022 - 2026</p>
+                    <p><b>CGPA:</b> 9.135</p>
+                </div>
+                <div class="inter">
+                    <h3>Intermediate(M.P.C)</h3>
+                    <p><b>Institution:</b> Sri Chaitanya Arts And Science Junior College, Khammam</p>
+                    <p><b>Duration:</b> 2020 - 2022</p>
+                    <p><b>Percentage:</b> 97.5</p>
+                </div>
+                <div class="school">
+                    <h3>High School(CBSE)</h3>
+                    <p><b>Institution:</b> Gorkey Public School, Khammam</p>
+                    <p><b>Duration:</b> 2019 - 2020</p>
+                    <p><b>Score:</b> 453</p>
+                </div>
+            </div>
+        </section> 
+        
+        
+        <!-- skills section -->
+        <section id="skills">
+            <h2 class="skills-heading">My Skills</h2>
+            <div class="skills-container">
+                <div class="technical-skills">
+                    <h3 class="tech-skills">
+                        Technical Skills
+                    </h3>
+                    <div class="skill">
+                        <i class="ri-html5-fill"></i>
+                        <span class="skill-name">Html</span>
+                        <div class="progress-bar">
+                            <div class="progress html-progress" data-percent="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-css3-fill"></i>
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress css-progress" data-percent="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-javascript-fill"></i>
+                        <span class="skill-name">Java Script</span>
+                        <div class="progress-bar">
+                            <div class="progress js-progress" data-percent="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-reactjs-line"></i>
+                        <span class="skill-name">React</span>
+                        <div class="progress-bar">
+                            <div class="progress react-progress" data-percent="30%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-python"></i>
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress python-progress" data-percent="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-java-line"></i>
+                        <span class="skill-name">Java</span>
+                        <div class="progress-bar">
+                            <div class="progress java-progress" data-percent="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span class="skill-name">SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress sql-progress" data-percent="65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h2 class="soft-heading">Professional Skills</h2>
+                
+                    <div class="skills-grid">
+                        <div class="skill-circle" data-percent="90" style="--percent: 85; --color: #ff5733;">
+                            <div class="progress"></div>
+                            <div class="inner-circle">
+                                <span class="percentage">85%</span>
+                                <p>Creativity</p>
+                            </div>
+                        </div>
+                        <div class="skill-circle" data-percent="80" style="--percent: 80; --color: #ffb833;">
+                            <div class="progress"></div>
+                            <div class="inner-circle">
+                                <span class="percentage">80%</span>
+                                <p>Communication</p>
+                            </div>
+                        </div>
+                        <div class="skill-circle" data-percent="70" style="--percent: 90; --color: #33ff57;">
+                            <div class="progress"></div>
+                            <div class="inner-circle">
+                                <span class="percentage">90%</span>
+                                <p>Problem-Solving</p>
+                            </div>
+                        </div>
+                        <div class="skill-circle" data-percent="85" style="--percent: 90; --color: #337bff;">
+                            <div class="progress"></div>
+                            <div class="inner-circle">
+                                <span class="percentage">90%</span>
+                                <p>Leadership</p>
+                            </div>
+                        </div>
+                        <div class="skill-circle" data-percent="85" style="--percent: 85; --color: #f7df1e;">
+                            <div class="progress"></div>
+                            <div class="inner-circle">
+                                <span class="percentage">85%</span>
+                                <p>Teamwork</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+        </section>
+
+
+        <!-- internship section -->
+        <section id="internship">
+            <div class="heading-intern">
+                <h2>Internship</h2>
+            </div>
+            <div class="internship-details">
+                <div class="content-intern">
+                    <h3>Frontend Developer Intern – MotionCut (via AICTE Platform)</h3>
+                    <div class="intern-img">
+                        <img src="images/Internship.jpg" alt="Internship Certificate" onclick="openLightbox(this.src)">
+                    </div>
+                    <p><b>Role:</b> Frontend Developer</p>
+                    <p><b>Company:</b> MotionCut</p>
+                    <p><i class="ri-calendar-check-fill"></i><b>Duration:</b> 15th July 2024 – 15th August 2024</p>
+                    <p><b>Key Learnings:</b> Gained hands-on experience in HTML, CSS, and JavaScript to develop interactive web applications.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- certificates section -->
+        <section id="certificates">
+            <h2 class="cert-heading">Certifications and Workshop</h2>
+            <div class="certificate-section">
+                <div class="coursera">
+                    <h3 class="coursera-python">Python</h3>
+                    <div class="coursera-img">
+                        <img src="images/coursera.jpg" alt="coursera certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="">
+                        Crash Course on Python – Google (via Coursera)
+                        Successfully completed the Crash Course on Python offered by Google through Coursera. 
+                        Gained hands-on experience with problem-solving and writing efficient code.
+                    </div>
+                </div>
+                <div class="nptel">
+                    <h3 class="nptel-python">Python</h3>
+                    <div class="nptel-img">
+                        <img src="images/nptel.jpg" alt="Nptel certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="">
+                        The Joy of Computing with Python – NPTEL
+                        Successfully completed The Joy of Computing with Python offered by NPTEL.
+                         This course covered Python programming fundamentals, problem-solving techniques, 
+                         algorithms, and real-world applications. Earned an Elite Certificate for excellence 
+                         in learning and application.
+                    </div>
+                </div>
+                <div class="python-basic">
+                    <h3 class="hackerrank-python">Python (basic)</h3>
+                    <div class="hackerrank-img">
+                        <img src="images/python basic.jpg " alt="coursera certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="">
+                        Python Basics – HackerRank
+                        Successfully completed the Python Basics certification on HackerRank.
+                         This course covered fundamental Python concepts, including data types,
+                          loops, conditionals, and functions, with hands-on coding challenges to enhance problem-solving skills.
+                    </div>
+                </div>
+                <div class="sql-basic">
+                    <h3 class="hackerrank-sql">SQL (basic)</h3>
+                    <div class="sql-img">
+                        <img src="images/sql.jpg" alt="sql certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="">
+                        SQL Basics – HackerRank
+                        Successfully completed the SQL Basics certification on HackerRank. 
+                        Covered fundamental SQL concepts, including queries, joins, aggregations, 
+                        and data manipulation, with hands-on coding challenges.
+                    </div>
+                </div>
+                <div class="java-basic">
+                    <h3 class="great-java">Java</h3>
+                    <div class="java-img">
+                        <img src="images/java.jpg" alt="java certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class=""> 
+                        Java Programming – Great Learning
+                        Successfully completed the Java Programming course on Great Learning. Covered core Java concepts, including object-oriented programming, data structures, and hands-on coding exercises.
+                    </div>
+                </div>
+                <div class="workshop">
+                    <h3 class="workshop-ai">AI Workshop</h3>
+                    <div class="workshop-img">
+                        <img src="images/workshop.jpg" alt="workshop certificate"  onclick="openLightbox(this.src)">
+                    </div>
+                    <div class="">
+                        AI Workshop – TechGyan (IIT Hyderabad, ECIL)
+                        Participated in an AI workshop conducted by TechGyan at IIT Hyderabad (ECIL). 
+                        The workshop covered fundamental AI concepts, machine learning algorithms and real-world AI applications. 
+                        Engaged in hands-on sessions, explored AI-driven problem-solving.
+                    </div>
+                </div>
+                <div id="lightbox" class="lightbox">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-img" src="" alt="Certificate">
+                </div>
+            </div>
+            <script>
+                function openLightbox(imageSrc) {
+                    document.getElementById("lightbox-img").src = imageSrc;
+                    document.getElementById("lightbox").style.display = "flex";
+                }
+                function closeLightbox() {
+                    document.getElementById("lightbox").style.display = "none";
+                }
+            </script>
+        </section>
+
+        
+        <!-- projects section -->
+        <section id="projects">
+            <div class="project-heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-details">
+                <div class="project-card">
+                    <h3>VizQ</h3>
+                    <p>An AI-driven tool that translates English instructions into PySpark/SQL queries, retrieves data, and generates visual insights through visualizations.</p>
+                    <button onclick="window.open('https://github.com/RithwikReddyMarla/sophisticated-user-interface.git')"><i class="ri-github-line"></i>View Code</button>
+                </div>
+                <div class="project-card">
+                    <h3>Gesture Speak</h3>
+                    <p>An AI-powered hand gesture recognition system that detects and interprets user gestures to control media functions like play, pause, and more. Utilizes computer vision to enable seamless, touch-free interaction.</p>
+                    <button onclick="window.open('https://github.com/RithwikReddyMarla/sophisticated-user-interface.git')"><i class="ri-github-line"></i>View Code</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- contact section -->
+        <section id="contact">
+            <h2 class="contact-heading">Contact Me</h2>
+            <div class="contact-details">
+                <p><strong>Email:</strong> rithwikreddymarla6@gmail.com</p>
+                <p><strong>Phone:</strong> +965 203 3954</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/rithwikReddyMarla" target="_blank">github.com/rithwikReddyMarla</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rithwik-reddy-marla/" target="_blank">linkedin.com/in/rithwik-reddy-marla/</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
