@@ -98,6 +98,40 @@ header {
 
 
 /* home section */
+
+.home-detail {
+    flex: 1;
+    min-width: 300px;
+}
+.home-detail {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.home-detail h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+    margin: 10px 0 20px;
+    word-break: break-word;
+    text-align: center; 
+}
+
+.home-detail h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    margin: 10px 0 20px;
+    word-break: break-word;
+    text-align: center;
+}
+
+.home-detail p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    margin: 10px 0 20px;
+    word-break: break-word;
+    text-align: center;
+}
 #home {
     display: flex;
     flex-wrap: wrap; 
@@ -107,26 +141,10 @@ header {
     padding: 30px 5%;
     color: #333;
     text-align: center;
-}
-.home-detail {
-    flex: 1;
-    min-width: 300px;
-}
-.home-detail h1 {
-    font-size: clamp(32px, 5vw, 50px);
-    line-height: 1.2;
-    margin: 10px 0 20px;
+    max-width: 100%;
+    overflow: hidden; 
 }
 
-.home-detail h2 {
-    font-size: clamp(24px, 4vw, 32px);
-    margin: 10px 0 20px;
-}
-
-.home-detail p {
-    font-size: clamp(16px, 2.5vw, 20px);
-    margin: 10px 0 20px;
-}
 
 .home-detail .download-social {
     display: flex;
