@@ -801,44 +801,48 @@ header {
     }
 }
 
-
-/* contact section */
+/* Contact Section */
 #contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 5vw 4vw;
 }
 
+/* Contact Heading */
 .contact-heading {
-    font-size: 40px;
+    font-size: clamp(28px, 5vw, 40px);
     font-weight: bold;
     text-align: center;
     color: #222;
     text-decoration: underline;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
+
+/* Contact Details */
 .contact-details {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 30%;
+    max-width: 400px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
+
 .contact-details p {
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
     color: black;
     margin: 0;
 }
+
 .contact-details a {
-    color:black;
+    color: black;
     text-decoration: none;
-    
     transition: color 0.3s ease;
 }
 
@@ -846,50 +850,50 @@ header {
     text-decoration: underline;
     color: #333;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .contact-details {
-        width: 80%;
-        padding: 15px;
+        padding: 3vw;
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .contact-heading {
-        font-size: 28px;
+        font-size: clamp(22px, 6vw, 28px);
     }
     .contact-details {
-        width: 90%;
-        padding: 12px;
+        padding: 4vw;
+        max-width: 95%;
     }
     .contact-details p {
-        font-size: 16px;
+        font-size: clamp(14px, 3vw, 16px);
     }
 }
 
-/* Prevent horizontal scrolling */
+/* Prevent Horizontal Scrolling */
 html, body {
     overflow-x: hidden;
     width: 100%;
 }
 
-/* Ensure all elements stay within the viewport */
+/* Ensure Elements Stay Within the Viewport */
 .container, header, .navbar, section {
     max-width: 100%;
     overflow-x: hidden;
 }
 
-/* Fix large elements causing overflow */
+/* Fix Large Elements Causing Overflow */
 img, video, iframe {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Prevent sections from stretching the page */
+/* Prevent Sections from Stretching the Page */
 section {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
-
