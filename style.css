@@ -35,17 +35,18 @@ header {
     z-index: 1000;
 }
 
-/* Prevent Scrolling on Body When Navbar is Open */
 body.no-scroll {
     overflow: hidden;
 }
 
-/* Logo */
 .logo {
     font-size: 28px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+}
+html {
+    scroll-padding-top: 60px; 
 }
 
 .navbar {
