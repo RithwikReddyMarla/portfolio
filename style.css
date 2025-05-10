@@ -136,6 +136,25 @@ html {
     word-break: break-word;
     text-align: center;
 }
+.home-detail span {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popIn 0.6s ease forwards;
+  line-height: 1;
+}
+
+.line1 span { animation-delay: calc(0s + 0.05s * var(--i)); }
+.line2 span { animation-delay: calc(1s + 0.05s * var(--i)); }
+.line3 span { animation-delay: calc(2.5s + 0.05s * var(--i)); }
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  60% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+
 #home {
     display: flex;
     flex-wrap: wrap; 
