@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="download-social">
-                    <a href="my-resume.pdf" class="btn" download="my_resume.pdf">Download CV</a>
+                    <a href="my_resume.pdf" class="btn" download="my_resume.pdf">Download CV</a>
                     <div class="social-icons">
                         <a href="https://github.com/RithwikReddyMarla" target="_blank"><i class="ri-github-fill"></i></a>
                         <a href="https://www.linkedin.com/in/rithwik-reddy-marla/" target="_blank"><i class="ri-linkedin-fill"></i></a>
@@ -367,30 +367,51 @@
     </div>
     <div class="project-details">
         <div class="project-card">
-            <img src="images\vizQ.png" alt="VizQ Project Cover" class="project-image">
+            <img src="images\vizq.jpg" alt="VizQ Project Cover" class="project-image" onclick="openLightbox(this.src)">
             <h3>VizQ</h3>
-            <p>An AI-driven tool that translates English instructions into PySpark/SQL queries, retrieves data, and generates visual insights through visualizations.</p>
+            <p>An AI-driven web application that translates English instructions into PySpark or SQL queries, enabling intuitive data access. It displays the generated query, retrieves corresponding data, and optionally renders dynamic visualizations like bar and pie charts based on user needs.</p>
             <button onclick="window.open('https://github.com/RithwikReddyMarla/sophisticated-user-interface.git')">
                 <i class="ri-github-line"></i>View Code
             </button>
         </div>
          <div class="project-card">
+            <img src="images/eventelite.jpg" alt="Eventelite Cover" class="project-image" onclick="openLightbox(this.src)">
+            <h3>Eventelite</h3>
+            <p>EventElite is a full-stack event management platform designed with an e-commerce-like UI. It allows users to explore various event types, view banquet and decor galleries, and securely book venues. The application features user authentication using JWT.</p>
+            <button onclick="window.open('https://github.com/RithwikReddyMarla/Eventeliteapp.git')">
+                <i class="ri-github-line"></i>View Code
+            </button>
+        </div>
+         <!-- <div class="project-card">
             <img src="images\Image_Slider_Cover.png" alt="Image_Slider Cover" class="project-image">
             <h3>Image-Slider</h3>
             <p>A sleek and responsive image slider showcasing cityscapes. Built using HTML, CSS, and JavaScript, it features smooth transitions, autoplay, and manual navigation. Optimized for performance and compatible with all devices.</p>
             <button onclick="window.open('https://github.com/RithwikReddyMarla/IMAGE-SLIDER.git')">
                 <i class="ri-github-line"></i>View Code
             </button>
-        </div>
+        </div> -->
         <div class="project-card">
-            <img src="images\gesture_cover.png" alt="Gesture Speak Project Cover" class="project-image">
+            <img src="images\gesture_speak..jpg" alt="Gesture Speak Project Cover" class="project-image" onclick="openLightbox(this.src)">
             <h3>Gesture Speak</h3>
             <p>An AI-powered hand gesture recognition system that detects and interprets user gestures to control media functions like play, pause, and more. Utilizes computer vision to enable seamless, touch-free interaction.</p>
             <button onclick="window.open('https://github.com/alankrutharao/GestureControl.git')">
                 <i class="ri-github-line"></i>View Code
             </button>
         </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Certificate">
+        </div>
     </div>
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById("lightbox-img").src = imageSrc;
+            document.getElementById("lightbox").style.display = "flex";
+              }
+            function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+                }
+    </script>
 </section>
 
         

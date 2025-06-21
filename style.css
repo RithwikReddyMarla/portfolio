@@ -788,10 +788,13 @@ html {
     text-decoration: underline;
 }
 .project-details {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    justify-items: center;
 }
+
 .project-card {
     background: rgba(255, 255, 255, 0.3);
     padding: 20px;
