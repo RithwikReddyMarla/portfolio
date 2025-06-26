@@ -787,6 +787,7 @@ html {
     color: #222;
     text-decoration: underline;
 }
+
 .project-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -804,20 +805,24 @@ html {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: left;
 }
+
 .project-card h3 {
     font-size: 22px;
     color: black;
     margin-bottom: 10px;
 }
+
 .project-card p {
     font-size: 16px;
     color: #333;
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
 .project-card:hover {
     transform: translateY(-8px);
 }
+
 .project-card button {
     background: #222;
     color: white;
@@ -831,22 +836,50 @@ html {
     align-items: center;
     gap: 8px;
 }
+
 .project-card button i {
     font-size: 18px;
 }
+
 .project-card button:hover {
     background: #444;
 }
-@media (max-width: 768px) {
+
+/* ✅ Responsive styles */
+@media (max-width: 992px) {
     .project-details {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .project-card {
-        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 600px) {
+    .project-heading h2 {
+        font-size: 28px;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p,
+    .project-card button {
+        font-size: 14px;
+    }
+
+    .project-card button i {
+        font-size: 16px;
+    }
+}
+
 
 /* Contact Section */
 #contact {
